@@ -105,6 +105,7 @@ function addParticle(x, y) {
 
 function updateCanvas() {
   setTimeout(() => {
+    canvasContext.clearRect(0, 0, canvasWidth, canvasHeight);
     offscreenCanvasContext.clearRect(0, 0, canvasWidth, canvasHeight);
     updateParticles();
     drawParticles();
